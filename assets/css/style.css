@@ -385,7 +385,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -508,10 +508,7 @@ section {
   margin-left: 60px;
 }
 .about .image {
-  background: url("../img/mapa_inge.png") center center no-repeat;
-  background-size: cover ;
-  scroll-behavior: smooth;
-  min-height: 400px;
+  min-height: 500px;
 }
 .boton_seleccion{
   margin: 0 !important;
