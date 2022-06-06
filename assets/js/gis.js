@@ -1,8 +1,5 @@
 'use strict';
 
-let view;
-let xy;
-
 require([
     "esri/widgets/Sketch/SketchViewModel",
     "esri/geometry/Polyline",
