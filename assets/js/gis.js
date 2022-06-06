@@ -249,10 +249,7 @@ require([
         };
     }
 
-    /***************************************************
-     * Draw the buffer polygon when application loads or
-     * when user searches for a new location
-     **************************************************/
+    // Dibuja el buffer cuando se mueven los puntos
     function drawBufferPolygon() {
         pausableWatchHandle.pause();
         const viewCenter = view.center.clone();

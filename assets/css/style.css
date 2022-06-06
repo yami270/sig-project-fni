@@ -1,10 +1,3 @@
-/**
-* Template Name: Bocor - v4.7.1
-* Template URL: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -12,12 +5,10 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-
 a {
   color: #fdc134;
   text-decoration: none;
 }
-
 a:hover {
   color: #fdd067;
   text-decoration: none;
@@ -90,6 +81,16 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
 }
+#header .logo h1, h2 {
+  font-size: 18px;
+  margin: 0;
+  padding: 10px 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
 #header .logo h1 a, #header .logo h1 a:hover {
   color: #fff;
   text-decoration: none;
@@ -104,220 +105,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
-.navbar {
-  padding: 0;
-}
-.navbar ul {
-  margin: 0;
-  padding: 0;
+* carrera_inf dentro del header
+-----------------------------------------------------------*/
+#carrera_inf{
   display: flex;
-  list-style: none;
-  align-items: center;
 }
-.navbar li {
-  position: relative;
+@media (max-width: 1200px) {
+ 
 }
-.navbar a, .navbar a:focus {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-size: 14px;
-  color: #adc7de;
-  white-space: nowrap;
-  transition: 0.3s;
-}
-.navbar a i, .navbar a:focus i {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: 5px;
-}
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #fff;
-}
-.navbar .getstarted, .navbar .getstarted:focus {
-  background: #213b52;
-  color: #fff;
-  padding: 4px 25px 6px 25px;
-  margin-left: 30px;
-  border-radius: 50px;
-  border: 2px solid #fdc134;
-}
-.navbar .getstarted:hover, .navbar .getstarted:focus:hover {
-  background: #fdc134;
-  color: #213b52;
-}
-.navbar .dropdown ul {
-  display: block;
-  position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
-  border-radius: 4px;
-}
-.navbar .dropdown ul li {
-  min-width: 200px;
-}
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-  text-transform: none;
-  font-weight: 500;
-  color: #3e6f9b;
-}
-.navbar .dropdown ul a i {
-  font-size: 12px;
-}
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #fdc134;
-}
-.navbar .dropdown:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-.navbar .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
+@media(max-width: 992px){
+  #carrera_inf{
+    display: flex;
+    
+    padding: 0;
   }
-  .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
-  }
+  
 }
 
-/**
-* Mobile Navigation 
-*/
-.mobile-nav-toggle {
-  color: #fdc134;
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-  transition: 0.5s;
-  position: fixed;
-  right: 15px;
-  top: 15px;
-  z-index: 9998;
-  border: 0;
-}
-
-@media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-
-  .navbar ul {
-    display: none;
-  }
-}
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(18, 33, 46, 0.9);
-  transition: 0.3s;
-  z-index: 999;
-}
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  border-radius: 10px;
-  background-color: #fff;
-  overflow-y: auto;
-  transition: 0.3s;
-}
-.navbar-mobile a, .navbar-mobile a:focus {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #213b52;
-}
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #fdc134;
-}
-.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
-  margin: 15px;
-  display: block;
-  border: 0;
-}
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-}
-.navbar-mobile .dropdown ul li {
-  min-width: 200px;
-}
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
-}
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
-}
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #fdc134;
-}
-.navbar-mobile .dropdown > .dropdown-active {
-  display: block;
-}
 
 /*--------------------------------------------------------------
-# Portada Section
+# Portada Section dentro del header
 --------------------------------------------------------------*/
-#hero {
+#portada {
   width: 100%;
   padding: 0 0 0 0;
-  background: #213b52;
-  
+  background: #213b52;  
   background: linear-gradient(180deg, #213b52 0%, #213c54 35%, #204564 100%);
   background-image: url("/assets/img/foto_inge1.jpg");
   background-position: left;
   background-repeat: no-repeat, repeat;
   background-size: cover;
 }
-#hero h1 {
+#portada h1 {
   margin: 0 0 15px 0;
   font-size: 48px;
   font-weight: 700;
@@ -326,12 +145,12 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-stroke: 1px black;
   font-family: "Poppins", sans-serif;
 }
-#hero h2 {
+#portada h2 {
   color: #c54008;
   margin-bottom: 30px;
   font-size: 22px;
 }
-#hero .btn-get-started {
+#portada .btn-get-started {
   color: #213b52;
   border-radius: 50px;
   padding: 8px 35px 10px 35px;
@@ -340,52 +159,103 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   background: #fdc134;
 }
-#hero .btn-get-started:hover {
+#portada .btn-get-started:hover {
   background: transparent;
   color: #fff;
 }
-@media (max-width: 991px) {
-  #hero .hero-img {
+@media (max-width: 992px) {
+  #portada {
+    -moz-text-align-last: center;
+    text-align-last: center;
     text-align: center;
+    background-size: 100%;
   }
-  #hero .hero-img img {
-    width: 50%;
+  
+  .letras_portada{
+    padding: 0 !important;
+    margin-bottom: 30px;
+  }
+  #portada .portada-img {
+    text-align: center;
+    padding: 0 !important;
+    margin: auto;
+  }
+  #portada .portada-img img {
+    width: 30%;
   }
 }
 @media (max-width: 768px) {
-  #hero {
+  #portada {
     -moz-text-align-last: center;
     text-align-last: center;
     background-size: 100%;
   }
-  #hero h1 {
+  #portada h1 {
     font-size: 28px;
     line-height: 36px;
   }
-  #hero h2 {
+  #portada h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }  
+  #ing_informatica {
+    padding: 0;
+    font-size: 5px;
+    display: flex ;
+    justify-content: flex-end ;
+    display: none;    
   }
-  #hero .hero-img img {
-    width: 50%;
+  #portada .portada-img{
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 !important;
+  }
+  .letras_portada{
+    padding: 0 !important;
+  }
+  #portada .portada-img img {
+    width: 35%;
   }
 }
-@media (max-width: 575px) {
-  #hero{
+@media (max-width: 576px) {
+  #portada{
     background-size: 100%;
   }
-  #hero .hero-img img {
-    width: 40%;
-    
+  .letras_portada{
+    padding: 0 !important;
+  }
+  #portada h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }  
+  #portada .portada-img img {
+    width: 30%;
   }
 }
+@media(max-width: 400px){ 
+  #portada h1 {
+    font-size: 23px;
+    line-height: 36px;
+  }
+  #portada h2 {
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  } 
+  #portada .portada-img img{
+    width: 20%;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 40px 0;
+  padding: 60px 0;
   overflow: hidden;
 }
 
@@ -431,105 +301,24 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background-color: #f6f9fb;
-  min-height: 40px;
-}
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
-}
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
-}
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-  .breadcrumbs ol {
-    display: block;
-  }
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-
 
 /*--------------------------------------------------------------
 # seleccion 
 --------------------------------------------------------------*/
-.about .content h3 {
-  font-weight: 700;
-  font-size: 34px;
-  color: #213b52;
-}
-.about .content p {
-  margin-bottom: 0;
-}
-.about .content .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 5px 0 10px 60px;
-  color: #213b52;
-}
-.about .content .icon-box h4 a {
-  color: #213b52;
-  transition: 0.3s;
-}
-.about .content .icon-box h4 a:hover {
-  color: #fdc134;
-}
-.about .content .icon-box i {
-  font-size: 48px;
-  float: left;
-  color: #fdc134;
-}
-.about .content .icon-box p {
-  font-size: 15px;
-  color: #848484;
-  margin-left: 60px;
-}
-.about .image {
-  min-height: 500px;
-}
-.boton_seleccion{
-  margin: 0 !important;
+.about{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 50%;
-  height: 50px;
-  border: 0;
-  border-radius: 25px;
-  background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
-          
+  align-items: flex-end;
 }
-.boton_seleccion p{
-  margin: 0px !important;
-  padding: 0;
-  font-family: cursive;
-}
+
 @media (max-width: 667px) {
-  .about .image img {
+  .about {
     max-width: 100%;
+  }
+  .navbar{
+    display: flex;
+    width: 50%;
   }
 }
 
@@ -552,7 +341,7 @@ section {
   border-radius: 0;
 }
 .services .card-img img {
-  max-width: 100%;
+  width: 100%;
   transition: all 0.3s ease-in-out;
 }
 .services .card-body {
@@ -725,4 +514,46 @@ section {
     float: none;
     text-align: ceneter;
   }
+}
+
+
+/*imagen arcgis*/
+#viewDiv {  
+  padding: 0;
+  margin: 0;
+  height: 500px;
+  width: 100%;
+  background-color: #2848641b;
+}
+.mapa_inge{
+  padding-top: 30px;
+  background-image: url('/img/Ingenieria.png') ;
+  background-repeat: round;
+  background-size: 80px;
+}
+#botones_mapas{
+  width: 80%;
+  margin: 20px auto 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+#boton_lista {
+  box-sizing: content-box;
+  color: #fdc134;
+  text-align: center;
+  justify-content: center;
+  width: 105px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #284864 !important;
+  margin: auto;
+  padding: 0;
+  font-size: 12px; 
+}       
+.card-text{
+  text-align: justify;
 }
