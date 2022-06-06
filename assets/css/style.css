@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 0 0 0;
   background: #213b52;  
   background: linear-gradient(180deg, #213b52 0%, #213c54 35%, #204564 100%);
-  background-image: url("/assets/img/foto_inge1.jpg");
+  background-image: url("../img/foto_inge1.jpg");
   background-position: left;
   background-repeat: no-repeat, repeat;
   background-size: cover;
@@ -518,7 +518,7 @@ section {
 
 
 /*imagen arcgis*/
-#viewDiv {  
+.viewDiv {  
   padding: 0;
   margin: 0;
   height: 500px;
@@ -527,7 +527,7 @@ section {
 }
 .mapa_inge{
   padding-top: 30px;
-  background-image: url('/img/Ingenieria.png') ;
+  background-image: url('../img/Ingenieria.png') ;
   background-repeat: round;
   background-size: 80px;
 }
