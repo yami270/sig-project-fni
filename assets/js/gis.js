@@ -107,6 +107,30 @@ require([
                     outFields: ["*"],
                 });
             break;
+        case 'drinks': 
+            objetive_layer = new FeatureLayer({
+                    url: "https://services7.arcgis.com/WvzPGhomAxRA9Pn9/arcgis/rest/services/drinksfni/FeatureServer/0",
+                    renderer: pointsRenderer,
+                    popupTemplate: template,
+                    outFields: ["*"],
+                });
+            break;
+        case 'kioskos': 
+            objetive_layer = new FeatureLayer({
+                    url: "https://services6.arcgis.com/avOvTSL5WAqL6vnT/arcgis/rest/services/kioskos_fni/FeatureServer/0",
+                    renderer: pointsRenderer,
+                    popupTemplate: template,
+                    outFields: ["*"],
+                });
+            break;
+        case 'snacks': 
+            objetive_layer = new FeatureLayer({
+                    url: "https://services6.arcgis.com/avOvTSL5WAqL6vnT/arcgis/rest/services/snacks/FeatureServer/0",
+                    renderer: pointsRenderer,
+                    popupTemplate: template,
+                    outFields: ["*"],
+                });
+            break;
         default:
             alert("ERROR");
             break;
