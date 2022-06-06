@@ -24,6 +24,7 @@ require([
     geometryEngine,
     watchUtils){
     // Variables globales
+    let view;
     let sketchViewModel, featureLayerView, pausableWatchHandle;
     let count = 0,
       centerGraphic,
